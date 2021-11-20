@@ -15,7 +15,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
+      <Route path="/about" render={(props) => <BlogPost {...props} />} />
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}

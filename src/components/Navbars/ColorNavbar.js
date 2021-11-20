@@ -70,7 +70,7 @@ function ColorNavbar() {
               Leap Of Everyday
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Leap Of Everyday
+            매일의 도약
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"
@@ -100,7 +100,7 @@ function ColorNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/blog-post">
+                <NavLink href="/about">
                   About
                 </NavLink>
               </NavItem>
@@ -108,10 +108,10 @@ function ColorNavbar() {
                 <DropdownToggle color="default" caret nav>
                   More
                 </DropdownToggle>
-                <DropdownMenu className="dropdown-danger" right>
+                <DropdownMenu className="dropdown-item" right>
                   <DropdownItem to="/profile-page" tag={Link}>
                     <i className="nc-icon nc-single-02" />
-                    Profile Page
+                    Hee-ang Kim
                   </DropdownItem>
                   <DropdownItem href="http://heeang.com/" target="_blank">
                     <i className="nc-icon nc-bank" />
