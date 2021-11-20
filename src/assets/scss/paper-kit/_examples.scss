@@ -483,6 +483,11 @@
         background-size: cover;
         min-height: 430px;
         width: 100%;
+        .card-description{
+            white-space: pre-line;
+            text-indent: 2rem;
+            font-size: 1.5rem;
+        }
     }
     .image-thumb{
         font-size: 14px;

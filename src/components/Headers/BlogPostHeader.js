@@ -1,7 +1,6 @@
 import React from "react";
 
 // reactstrap components
-import { Button } from "reactstrap";
 
 // core components
 
@@ -25,33 +24,15 @@ function BlogPostHeader() {
   return (
     <>
       <div
-        className="page-header"
+        className="page-header-about"
         ref={pageHeader}
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/sections/uriel-soberanes.jpg").default +
+            require("assets/img/02_aboutpage/darkposter.jpg").default +
             ")",
         }}
       >
-        <div className="filter" />
-        <div className="content-center">
-          <div className="motto">
-            <h1 className="title-uppercase text-center">Paper Kit</h1>
-            <h3 className="text-center">Make your mark with a new design.</h3>
-            <br />
-            <Button
-              className="btn-round"
-              color="warning"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-              size="lg"
-            >
-              <i className="fa fa-share-alt mr-1 " />
-              Share Article
-            </Button>
-          </div>
-        </div>
       </div>
     </>
   );

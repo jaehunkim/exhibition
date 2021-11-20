@@ -70,7 +70,7 @@ function ColorNavbar() {
               Leap Of Everyday
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Leap Of Everyday
+            매일의 도약
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"
@@ -90,8 +90,8 @@ function ColorNavbar() {
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                  Home
+                <NavLink href="/index">
+                  Explore
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -99,21 +99,25 @@ function ColorNavbar() {
                   Exhibition
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/about">
+                  About
+                </NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle color="default" caret nav>
                   More
                 </DropdownToggle>
-                <DropdownMenu className="dropdown-danger" right>
+                <DropdownMenu className="dropdown-item" right>
                   <DropdownItem to="/profile-page" tag={Link}>
                     <i className="nc-icon nc-single-02" />
-                    Profile Page
+                    Hee-ang Kim
                   </DropdownItem>
-
-                  <DropdownItem to="/official-home" tag={Link}>
+                  <DropdownItem href="http://heeang.com/" target="_blank">
                     <i className="nc-icon nc-bank" />
                     heeang.com
                   </DropdownItem>
-                  <DropdownItem to="/official-home" tag={Link}>
+                  <DropdownItem href="https://www.instagram.com/heeang_kim/" target="_blank">
                     <i className="fa fa-instagram" />
                     instagram
                   </DropdownItem>
