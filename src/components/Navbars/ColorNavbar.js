@@ -90,13 +90,18 @@ function ColorNavbar() {
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                  Home
+                <NavLink href="/index">
+                  Explore
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                   Exhibition
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/blog-post">
+                  About
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
@@ -108,12 +113,11 @@ function ColorNavbar() {
                     <i className="nc-icon nc-single-02" />
                     Profile Page
                   </DropdownItem>
-
-                  <DropdownItem to="/official-home" tag={Link}>
+                  <DropdownItem href="http://heeang.com/" target="_blank">
                     <i className="nc-icon nc-bank" />
                     heeang.com
                   </DropdownItem>
-                  <DropdownItem to="/official-home" tag={Link}>
+                  <DropdownItem href="https://www.instagram.com/heeang_kim/" target="_blank">
                     <i className="fa fa-instagram" />
                     instagram
                   </DropdownItem>
