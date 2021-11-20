@@ -14,7 +14,7 @@
     -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
     transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 
-    &:not(.card-plain):hover {
+    &:not(.card-plain):not(.card-exhibition):hover {
       box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3);
       transform: translateY(-10px);
       -webkit-transform: translateY(-10px);
@@ -374,6 +374,31 @@
         }
         .dropdown-menu{
             margin-top: 55px;
+        }
+    }
+
+    &.card-exhibition{
+        text-align: left;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+
+        .card-body{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .card-title{
+            margin-bottom: 0.5rem;
+        }
+        .exhibition-description{
+            white-space: pre-line;
+            text-indent: 0.3rem;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        img{
+            border-radius: $border-radius-extreme;
         }
     }
 
