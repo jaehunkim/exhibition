@@ -7,7 +7,6 @@ import React from "react";
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import FooterBlack from "components/Footers/FooterBlack.js";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -23,7 +22,6 @@ function Index() {
     <>
       <ColorNavbar />
       <IndexHeader />
-      <FooterBlack />
     </>
   );
 }
