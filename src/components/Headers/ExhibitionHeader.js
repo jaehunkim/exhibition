@@ -1,42 +1,48 @@
 import React from "react";
+import ImageMapper from 'react-image-mapper';
 
 // reactstrap components
 import {
+  Label,
+  Input,
   Carousel,
   CarouselItem,
   CarouselCaption,
   CarouselIndicators,
+  Button,
 } from "reactstrap";
 // core components
 const items = [
   {
+    key: 1,
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/green.jpg").default +
+      require("assets/img/01_exhibition/right02.jpeg").default +
       ")",
+    difsrc: require("assets/img/01_exhibition/right02.jpeg").default,
     altText: "",
     caption: "",
   },
   {
+    key: 2,
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/purple.jpg").default +
+      require("assets/img/01_exhibition/right04.jpeg").default +
       ")",
+    difsrc: require("assets/img/01_exhibition/right04.jpeg").default,
     altText: "",
     caption: "",
-  },
-  {
-    src:
-      "url(" +
-      require("assets/img/00_realimg/bgitems/grey.jpg").default +
-      ")",
-    altText: "",
-    caption: "",
-  },
+  }
 ];
 
-function IndexHeader() {
-  // carousel - header 3
+const example01map = {
+  name: "example01map",
+  areas: [
+    { name: "1", shape: "poly", coords: [513, 1161, 513, 1501, 1093, 1501, 1093, 1161], preFillColor: "green", fillColor: "blue" },
+  ]
+};
+
+function ExhibitionHeader() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -61,7 +67,7 @@ function IndexHeader() {
   };
   return (
     <>
-      <div className="header-3">
+      <div className="header-exhibition">
         <div className="page-carousel">
           <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={10000}>
             <CarouselIndicators
@@ -80,13 +86,29 @@ function IndexHeader() {
                     className="page-header"
                     style={{ backgroundImage: item.src }}
                   >
-                    <div className="filter" />
-                    <div className="content-center">{item.content}</div>
+                      <div
+                        className="btn-carousel btn-link mr-1"
+                        color="dribbble"
+                        href="#pablo"
+                        onClick={(e) => { e.preventDefault(); previous(); }}
+                        role="button"
+                      >
+                        <i className="fa fa-plus-circle" aria-hidden="true"></i> 
+                        <span className="sr-only">Previous</span>
+                      </div>
                   </div>
+
+                  
+
+                  {/* <Button className="btn-just-icon btn-link mr-1" color="dribbble"
+                    href="#pablo"
+                    onClick={(e) => { e.preventDefault(); previous(); }}>
+                    <i className="fa fa-dribbble"></i>
+                  </Button>
                   <CarouselCaption
                     captionText={item.caption}
                     captionHeader=""
-                  />
+                  /> */}
                 </CarouselItem>
               );
             })}
@@ -123,4 +145,4 @@ function IndexHeader() {
   );
 }
 
-export default IndexHeader;
+export default ExhibitionHeader;

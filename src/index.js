@@ -8,6 +8,7 @@ import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
 import Index from "views/Index.js";
+import Exhibition from "views/Exhibition.js";
 import BlogPost from "views/examples/BlogPost.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route path="/about" render={(props) => <BlogPost {...props} />} />
+      <Route path="/exhibition" render={(props) => <Exhibition {...props} />} />
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
