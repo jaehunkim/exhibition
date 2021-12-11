@@ -12,7 +12,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/green.jpg").default +
+      require("assets/img/00_realimg/bgitems/darkposter.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -20,15 +20,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/purple.jpg").default +
-      ")",
-    altText: "",
-    caption: "",
-  },
-  {
-    src:
-      "url(" +
-      require("assets/img/00_realimg/bgitems/grey.jpg").default +
+      require("assets/img/00_realimg/bgitems/poster.jpg").default +
       ")",
     altText: "",
     caption: "",

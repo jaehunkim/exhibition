@@ -1,15 +1,16 @@
 import React from "react";
-import ImageMapper from 'react-image-mapper';
+
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 // reactstrap components
 import {
-  Label,
-  Input,
   Carousel,
   CarouselItem,
   CarouselCaption,
   CarouselIndicators,
   Button,
+  Modal,
 } from "reactstrap";
 // core components
 const items = [
@@ -22,6 +23,10 @@ const items = [
     difsrc: require("assets/img/01_exhibition/right02.jpeg").default,
     altText: "",
     caption: "",
+    theme: {
+      top: "100px",
+      left: "100px"
+    }
   },
   {
     key: 2,
@@ -32,6 +37,10 @@ const items = [
     difsrc: require("assets/img/01_exhibition/right04.jpeg").default,
     altText: "",
     caption: "",
+    theme: {
+      top: "100px",
+      left: "100px"
+    }
   }
 ];
 
@@ -42,7 +51,14 @@ const example01map = {
   ]
 };
 
+const Abs = styled.div`
+  position: absolute;
+  top: ${props => props.theme.top};
+  left: ${props => props.theme.left};
+`;
+
 function ExhibitionHeader() {
+  const [scrollingLongContent, setScrollingLongContent] = React.useState(false);
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -65,11 +81,14 @@ function ExhibitionHeader() {
     if (animating) return;
     setActiveIndex(newIndex);
   };
+  const onClickButton = (index) => {
+    setScrollingLongContent(true);
+  }
   return (
     <>
       <div className="header-exhibition">
         <div className="page-carousel">
-          <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={10000}>
+          <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={false}>
             <CarouselIndicators
               items={items}
               activeIndex={activeIndex}
@@ -83,28 +102,29 @@ function ExhibitionHeader() {
                   key={item.src}
                 >
                   <div
-                    className="page-header"
-                    style={{ backgroundImage: item.src }}
+                    className="page-header-exhibition content-center"
+                    //style={{ backgroundImage: item.src }}
                   >
-                      <div
-                        className="btn-carousel btn-link mr-1"
-                        color="dribbble"
-                        href="#pablo"
-                        onClick={(e) => { e.preventDefault(); previous(); }}
-                        role="button"
-                      >
-                        <i className="fa fa-plus-circle" aria-hidden="true"></i> 
-                        <span className="sr-only">Previous</span>
-                      </div>
+                    <div className="page-header-exhibition img-container">
+                      <img src={ item.difsrc } className="page-header-exhibition img-container img"/>
+                    </div>
+
+                    <ThemeProvider theme={ item.theme }> 
+                      <Abs>
+                        <Button
+                          className="page-header-exhibition btn-just-icon btn-border"
+                          color="reddit"
+                          href="#pablo"
+                          size="lg"
+                          onClick={(e) => { e.preventDefault(); onClickButton(0); }}
+                        >
+                          <i class="fa fa-plus"></i>
+                        </Button>
+                      </Abs>
+                    </ThemeProvider>
                   </div>
 
-                  
-
-                  {/* <Button className="btn-just-icon btn-link mr-1" color="dribbble"
-                    href="#pablo"
-                    onClick={(e) => { e.preventDefault(); previous(); }}>
-                    <i className="fa fa-dribbble"></i>
-                  </Button>
+                  {/*
                   <CarouselCaption
                     captionText={item.caption}
                     captionHeader=""
@@ -139,6 +159,21 @@ function ExhibitionHeader() {
               <span className="sr-only">Next</span>
             </a>
           </Carousel>
+          <Modal className="modal-lg" isOpen={scrollingLongContent} toggle={() => setScrollingLongContent(false)}>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">
+                Modal title
+              </h5>
+            </div>
+            <div className="modal-body">
+              <img src={require("assets/img/01_exhibition/right02.jpeg").default} className="img-thumbnail img-responsive"/>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+                ac consectetur ac, vestibulum at eros.
+              </p>
+            </div>
+          </Modal>
         </div>
       </div>
     </>
