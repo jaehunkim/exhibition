@@ -12,7 +12,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/darkposter.jpg").default +
+      require("assets/img/00_explore/ex_view.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -20,7 +20,23 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_realimg/bgitems/poster.jpg").default +
+      require("assets/img/00_explore/ex_view_2.jpg").default +
+      ")",
+    altText: "",
+    caption: "",
+  },
+  {
+    src:
+      "url(" +
+      require("assets/img/00_explore/ex_view_3.jpg").default +
+      ")",
+    altText: "",
+    caption: "",
+  },
+  {
+    src:
+      "url(" +
+      require("assets/img/00_explore/ex_view_4.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -69,10 +85,10 @@ function IndexHeader() {
                   key={item.src}
                 >
                   <div
-                    className="page-header"
+                    className="page-header-explore"
                     style={{ backgroundImage: item.src }}
                   >
-                    <div className="filter" />
+                    {/* <div className="filter" /> */}
                     <div className="content-center">{item.content}</div>
                   </div>
                   <CarouselCaption
