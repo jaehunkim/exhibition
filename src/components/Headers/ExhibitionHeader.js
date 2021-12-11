@@ -63,12 +63,13 @@ const items = [
     caption: "",
     buttons: [
       {
+        index: 0,
         top: 850,
         left: 451,
-        title: "dddd",
-        image: require("assets/img/01_exhibition/camera/ex_01_left01.jpg").default,
-        content: "aaaa",
-      }
+        title: "재구성된 형태 4 Re-form 4",
+        image: require("assets/img/01_exhibition/items/Re-form-4_Hee-ang-Kim.jpg").default,
+        content: "목걸이 Necklace⎜9x10.4x4cm, Length 68cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트, 레진 Polymer clay, Stone clay, Sterling silver, Acrylic paint, Resin⎜2021",
+      },
     ]
   }
 ];
