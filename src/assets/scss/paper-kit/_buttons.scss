@@ -55,6 +55,33 @@
     }
 }
 
+.btn-carousel{
+    border-radius: $border-radius-btn-large;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+    top: 100px;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+
+    @include btn-styles($default-color, $default-states-color);
+
+    &.btn-sm{
+        padding: 4px !important;
+    }
+    &.btn-link{
+        background-color: $transparent-bg;
+    }
+    i{
+        font-size: $font-size-medium;
+        padding: 2px 0px;
+    }
+}
+
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,

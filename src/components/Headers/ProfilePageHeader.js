@@ -15,7 +15,7 @@ function ProfilePageHeader() {
   return (
     <>
       <div
-        className="page-header page-header-small"
+        className="page-header page-header-xs"
         style={{
           backgroundImage:
             "url(" +
@@ -23,7 +23,6 @@ function ProfilePageHeader() {
             ")",
         }}
       >
-        <div className="filter" />
       </div>
     </>
   );

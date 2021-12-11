@@ -2,21 +2,21 @@
 
 .navbar-transparent, [class*="bg"]{
     .navbar-brand{
-        color: $white-color;
+        color: $black-color;
         @include opacity(.9);
 
         &:focus,
         &:hover{
             background-color: transparent;
             @include opacity(1);
-            color: $white-color;
+            color: $black-color;
         }
     }
 
     .navbar-nav{
         .nav-item .nav-link:not(.btn){
-            color: $white-color;
-            border-color: $white-color;
+            color: $black-color;
+            border-color: $black-color;
         }
         .active .nav-link
         .active .nav-link:hover,
@@ -24,7 +24,7 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color: $white-color;
+            color: $black-color;
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover{

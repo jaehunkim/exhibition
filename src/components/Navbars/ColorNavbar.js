@@ -95,7 +95,7 @@ function ColorNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                <NavLink href="/Exhibition">
                   Exhibition
                 </NavLink>
               </NavItem>
