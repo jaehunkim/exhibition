@@ -79,6 +79,66 @@ const items = [
         content: "목걸이 Necklace⎜10.3x8.7x3.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
       },
     ]
+  },
+  {
+    key: 3,
+    src:
+      "url(" +
+      require("assets/img/01_exhibition/camera/ex_02_back01.jpg").default +
+      ")",
+    difsrc: require("assets/img/01_exhibition/camera/ex_02_back01.jpg").default,
+    altText: "",
+    caption: "",
+    buttons: [
+      {
+        index: 0,
+        top: 643,
+        left: 305,
+        title: "피어나는 순간 The first buds",
+        image: require("assets/img/01_exhibition/items/03_Bloom and Wither 9_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+      {
+        index: 1,
+        top: 773,
+        left: 412,
+        title: "재구성된 형태 5 Re-form 5",
+        image: require("assets/img/01_exhibition/items/03_Bloom and Wither 11_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜10.3x8.7x3.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
+      },
+      {
+        index: 2,
+        top: 760,
+        left: 930,
+        title: "피어나는 순간 The first buds",
+        image: require("assets/img/01_exhibition/items/03_Blooming 7_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+      {
+        index: 3,
+        top: 635,
+        left: 1017,
+        title: "재구성된 형태 5 Re-form 5",
+        image: require("assets/img/01_exhibition/items/03_Heart brooch_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜10.3x8.7x3.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
+      },
+      {
+        index: 4,
+        top: 735,
+        left: 1545,
+        title: "피어나는 순간 The first buds",
+        image: require("assets/img/01_exhibition/items/03_Starting point_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+      {
+        index: 5,
+        top: 650,
+        left: 1627,
+        title: "재구성된 형태 5 Re-form 5",
+        image: require("assets/img/01_exhibition/items/03_Re-form 1 _Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜10.3x8.7x3.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
+      }
+    ]
   }
 ];
 
