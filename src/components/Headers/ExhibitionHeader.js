@@ -31,7 +31,7 @@ const items = [
         top: 850,
         left: 451,
         title: "재구성된 형태 4 Re-form 4",
-        image: require("assets/img/01_exhibition/items/Re-form-4_Hee-ang-Kim.jpg").default,
+        image: require("assets/img/01_exhibition/items/01_Re-form-4_Hee-ang-Kim.jpg").default,
         content: "목걸이 Necklace⎜9x10.4x4cm, Length 68cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트, 레진 Polymer clay, Stone clay, Sterling silver, Acrylic paint, Resin⎜2021",
       },
       {
@@ -39,7 +39,7 @@ const items = [
         top: 650,
         left: 1460,
         title: "군집 9 Cluster 9",
-        image: require("assets/img/01_exhibition/items/Cluster-9_Hee-ang-Kim.jpg").default,
+        image: require("assets/img/01_exhibition/items/01_Cluster-9_Hee-ang-Kim.jpg").default,
         content: "브로치 Brooch⎜9x12x3.5cm⎜폴리머클레이, 아크릴 물감, 정은, 알루미늄, Polymer clay, Acrylic paint, Sterling silver, Aluminium⎜2018",
       },
       {
@@ -47,9 +47,9 @@ const items = [
         top: 830,
         left: 1605,
         title: "군집 17 Cluster 17",
-        image: require("assets/img/01_exhibition/items/Cluster-17_Hee-ang-Kim.jpg").default,
+        image: require("assets/img/01_exhibition/items/01_Cluster-17_Hee-ang-Kim.jpg").default,
         content: "브로치 Brooch⎜7.2x9.8x2.2cm⎜폴리머클레이, 아크릴 물감, 정은, Polymer clay, Acrylic paint, Sterling silver⎜2020",
-      },
+      }
     ]
   },
   {
@@ -64,11 +64,19 @@ const items = [
     buttons: [
       {
         index: 0,
-        top: 850,
-        left: 451,
-        title: "재구성된 형태 4 Re-form 4",
-        image: require("assets/img/01_exhibition/items/Re-form-4_Hee-ang-Kim.jpg").default,
-        content: "목걸이 Necklace⎜9x10.4x4cm, Length 68cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트, 레진 Polymer clay, Stone clay, Sterling silver, Acrylic paint, Resin⎜2021",
+        top: 740,
+        left: 435,
+        title: "피어나는 순간 The first buds",
+        image: require("assets/img/01_exhibition/items/02_The first buds_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+      {
+        index: 1,
+        top: 835,
+        left: 1525,
+        title: "재구성된 형태 5 Re-form 5",
+        image: require("assets/img/01_exhibition/items/02_Re-form 5_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜10.3x8.7x3.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
       },
     ]
   }
