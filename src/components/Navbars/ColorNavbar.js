@@ -100,8 +100,13 @@ function ColorNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/about">
-                  About
+                <NavLink href="/information">
+                  Information
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/artistnote">
+                  artist note
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>

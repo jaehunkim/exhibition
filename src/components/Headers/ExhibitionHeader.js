@@ -194,7 +194,7 @@ const items = [
     buttons: [
       {
         index: 0,
-        top: 539.38,
+        top: 400.38,
         left: 714.5,
         photowidth:1429,
         photoheight:1705,

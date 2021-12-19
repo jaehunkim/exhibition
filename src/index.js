@@ -11,13 +11,15 @@ import Index from "views/Index.js";
 import Exhibition from "views/Exhibition.js";
 import BlogPost from "views/examples/BlogPost.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import ArtistNote from "views/ArtistNote.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route path="/about" render={(props) => <BlogPost {...props} />} />
+      <Route path="/artistnote" render={(props) => <ArtistNote {...props} />} />
       <Route path="/exhibition" render={(props) => <Exhibition {...props} />} />
+      <Route path="/information" render={(props) => <BlogPost {...props} />} />
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
