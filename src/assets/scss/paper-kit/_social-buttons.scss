@@ -38,6 +38,10 @@
 	@include social-buttons-color($social-reddit);
 }
 
+.btn-heeang {
+	@include social-buttons-color-hover($social-heeang, $social-heeang-hover);
+}
+
 .btn-tumblr {
 	@include social-buttons-color($social-tumblr);
 }

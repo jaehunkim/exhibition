@@ -119,7 +119,7 @@ function ColorNavbar() {
                     Hee-ang Kim
                   </DropdownItem>
                   <DropdownItem href="http://heeang.com/" target="_blank">
-                    <i className="nc-icon nc-bank" />
+                    <i className="fa fa-home" />
                     heeang.com
                   </DropdownItem>
                   <DropdownItem href="https://www.instagram.com/heeang_kim/" target="_blank">

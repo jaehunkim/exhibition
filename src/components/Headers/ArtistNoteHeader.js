@@ -19,7 +19,7 @@ function ArtistNoteHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/01_exhibition/phone/right01.jpeg").default +
+            require("assets/img/02_aboutpage/background02.jpg").default +
             ")",
         }}
       >

@@ -318,6 +318,8 @@ function MoreButton(props) {
   width: 15px;
   min-width: 15px;
   min-height: 15px;
+  z-index: 10;
+  color: blue;
 `;
 
   return (
@@ -326,7 +328,7 @@ function MoreButton(props) {
         <Abs>
           <Button
             className="page-header-exhibition btn-just-icon btn-border"
-            color="#808080"
+            color="heeang"
             href="#pablo"
             size="lg"
             align="center"
@@ -412,10 +414,6 @@ function ExhibitionHeader() {
                       return (<MoreButton theme={button} pf={onClickButton} />);
                     })}
                   </div>
-                  <CarouselCaption
-                    captionText={item.caption}
-                    captionHeader=""
-                  />
                 </CarouselItem>
               );
             })}
