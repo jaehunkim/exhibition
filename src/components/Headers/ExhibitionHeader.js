@@ -124,8 +124,8 @@ const items = [
     buttons: [
       {
         index: 0,
-        top: 400.38,
-        left: 714.5,
+        top: -5000,
+        left: -5000,
         photowidth: 1429,
         photoheight: 1705,
         title: "",
@@ -317,8 +317,6 @@ function MoreButton(props) {
   width: 15px;
   min-width: 15px;
   min-height: 15px;
-  z-index: 10;
-  color: blue;
 `;
 
   return (
