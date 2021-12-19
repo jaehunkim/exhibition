@@ -259,7 +259,7 @@ function ExhibitionHeader() {
   const [scrollingLongContent, setScrollingLongContent] = React.useState(false);
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
-  const [modalState, setModalState] = React.useState({ modalIsOpen: false, modalIndex: 0 });
+  const [modalState, setModalState] = React.useState({ modalIndex: 0 });
   const { wpadding, hpadding, w, h } = useWindowDimensions();
 
   const Abs = styled.div`
@@ -278,21 +278,21 @@ function ExhibitionHeader() {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
+    setModalState({ modalIndex: 0 });
   };
   const previous = () => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
+    setModalState({ modalIndex: 0 });
   };
   const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
+    setModalState({ modalIndex: 0 });
   };
   const onClickButton = (index) => {
-    var newState = modalState;
-    newState.modalIsOpen = true;
-    newState.modalIndex = index;
-    setModalState(newState);
+    setModalState({ modalIndex: index });
     setScrollingLongContent(true);
   }
   return (
@@ -361,7 +361,7 @@ function ExhibitionHeader() {
               </h5>
             </div>
             <div className="modal-body">
-              <img src={items[activeIndex].buttons[modalState.modalIndex].image} className="img-thumbnail img-responsive" alt=""/>
+              <img src={items[activeIndex].buttons[modalState.modalIndex].image} className="img-thumbnail img-responsive" alt="" />
               <p>
                 {items[activeIndex].buttons[modalState.modalIndex].content}
               </p>
