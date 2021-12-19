@@ -256,12 +256,44 @@ const items = [
     buttons: [
       {
         index: 0,
-        top: 1000,
-        left: 1000,
-        title: "Wavy 4",
-        image: require("assets/img/01_exhibition/items/04_Wavy 4_Hee-ang Kim.jpg").default,
-        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+        top: 800,
+        left: 350,
+        title: "포자들 4 Spores 4",
+        image: require("assets/img/01_exhibition/items/08_Spores 4_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜길이 Length 88cm⎜레진, 유리 구슬, 정은 Resin, Glass beads, Sterling Silver⎜2021",
       },
+      {
+        index: 1,
+        top: 810,
+        left: 969,
+        title: "포자들 2 Spores 2",
+        image: require("assets/img/01_exhibition/items/08_Spore 2 Hee-ang Kim.jpg").default,
+        content: "브로치 Brooch⎜6x7.8x4.5cm⎜나무, 레진, 플로킹 파우더, 정은 Wood, Resin, Flocking powder, Sterling Silver⎜2021",
+      },
+      {
+        index: 2,
+        top: 642,
+        left: 1018,
+        title: "포자들 1 Spores 1",
+        image: require("assets/img/01_exhibition/items/08_Spore 1_Hee-ang Kim.jpg").default,
+        content: "브로치 Brooch⎜6.5x8.8x4.6cm⎜나무, 레진, 플로킹 파우더, 정은 Wood, Resin, Flocking powder, Sterling Silver⎜2021",
+      },
+      {
+        index: 3,
+        top: 730,
+        left: 1092,
+        title: "포자들 3 Spores 3",
+        image: require("assets/img/01_exhibition/items/08_Spore 3_Hee-ang Kim.jpg").default,
+        content: "브로치 Brooch⎜5.5x8.2x5.3cm⎜나무, 레진, 폴리머 클레이, 아크릴 페인트, 정은 Wood, Resin, Polymer clay, Acrylic paint, Sterling silver⎜2021",
+      },
+      {
+        index: 3,
+        top: 763,
+        left: 1655,
+        title: "재구성된 형태 6 Re-form 6",
+        image: require("assets/img/01_exhibition/items/08_Re-form 6_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜9.4x13.2x2.8cm, 길이 Length 56cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
+      }
     ]
   },
   
@@ -369,6 +401,10 @@ function ExhibitionHeader() {
                       return (<MoreButton theme={button} pf={onClickButton} />);
                     })}
                   </div>
+                  <CarouselCaption
+                    captionText={item.caption}
+                    captionHeader=""
+                  />
                 </CarouselItem>
               );
             })}
