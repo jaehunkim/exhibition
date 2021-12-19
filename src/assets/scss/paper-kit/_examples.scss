@@ -494,6 +494,49 @@
         color: $muted-color;
     }
 }
+.artistnote{
+    background-color: $white-color;
+    .navbar{
+        border-bottom: 0 none;
+        margin-bottom: 0px;
+
+        input{
+            background-color: $white-color;
+        }
+    }
+    .title{
+        h3{
+            margin-top: -10px;
+        }
+    }
+    .main-tag{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .title{
+        color: $default-states-color;
+        font-weight: 600;
+    }
+
+    .card-big-shadow{
+        max-width: 100%;
+    }
+    .card{
+        margin-top: 25px;
+        background-size: cover;
+        min-height: 430px;
+        width: 100%;
+        .card-description{
+            white-space: pre-line;
+            text-indent: 2rem;
+            font-size: 1rem;
+        }
+    }
+    .image-thumb{
+        font-size: 14px;
+        color: $muted-color;
+    }
+}
 .card-blog{
     a {
         .title-uppercase{

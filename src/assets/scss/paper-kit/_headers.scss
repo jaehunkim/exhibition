@@ -16,6 +16,9 @@
     &.page-header-xs{
         min-height: 40vh !important;
     }
+    &.page-header-xxs{
+        min-height: 20vh !important;
+    }
 
     .page-header-image{
         position: absolute;
@@ -313,8 +316,8 @@ video{
 
     .img-container {
         position: absolute;
-        max-width: 2000px;
-        max-height: 1333px;
+        //max-width: 2000px;
+        max-height: 2000px;
         //max-width: 960px;
         //max-height: 540px;
       
