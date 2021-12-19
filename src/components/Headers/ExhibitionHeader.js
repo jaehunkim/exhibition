@@ -179,7 +179,92 @@ const items = [
         content: "브로치 Brooch⎜7.2x6.5x4.5cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트 Polymer clay, Stone clay, Sterling silver, Acrylic paint⎜2021",
       }
     ]
-  }
+  },
+  {
+    key: 6,
+    src:
+      "url(" +
+      require("assets/img/01_exhibition/camera/ex_02_back04.jpg").default +
+      ")",
+    difsrc: require("assets/img/01_exhibition/camera/ex_02_back04.jpg").default,
+    altText: "",
+    caption: "",
+    buttons: [
+      {
+        index: 0,
+        top: -5000,
+        left: -5000,
+        title: "Wavy 4",
+        image: require("assets/img/01_exhibition/items/04_Wavy 4_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+    ]
+  },
+  {
+    key: 7,
+    src:
+      "url(" +
+      require("assets/img/01_exhibition/camera/ex_03_right01.jpg").default +
+      ")",
+    difsrc: require("assets/img/01_exhibition/camera/ex_03_right01.jpg").default,
+    altText: "",
+    caption: "",
+    buttons: [
+      {
+        index: 0,
+        top: 800,
+        left: 285,
+        title: "Wavy 3",
+        image: require("assets/img/01_exhibition/items/07_Wavy 3_Hee-ang Kim.jpg").default,
+        content: "브로치 Brooch⎜9.2x10x4.8cm⎜석분점토, 정은, 아크릴 페인트 Stone clay, Sterling silver, Acrylic paint⎜2021",
+      },
+      {
+        index: 1,
+        top: 650,
+        left: 400,
+        title: "Wavy 1",
+        image: require("assets/img/01_exhibition/items/07_Wavy 1 _Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜3.8x3.8x1.6cm, 3.4x3.4x1.4cm⎜정은, 폴리머클레이, 아크릴 페인트 Sterling silver, Polymer clay, Acrylic paint⎜2021",
+      },
+      {
+        index: 2,
+        top: 800,
+        left: 993,
+        title: "재구성된 형태 3 Re-form 3",
+        image: require("assets/img/01_exhibition/items/07_Re-form 3_Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜4.4x7.6x3cm, 길이 Length 86cm⎜폴리머클레이, 석분점토,정은, 아크릴 페인트, 레진, 실리콘 끈 Polymer clay, Stone clay, Sterling silver, Acrylic paint, Resin, Silicone string⎜2021",
+      },
+      {
+        index: 3,
+        top: 750,
+        left: 1670,
+        title: "Wavy 2",
+        image: require("assets/img/01_exhibition/items/07_Wavy 2 _Hee-ang Kim.jpg").default,
+        content: "목걸이 Necklace⎜길이 Length 52cm⎜정은, 폴리머클레이, 아크릴 페인트 Sterling silver, Polymer clay, Acrylic paint⎜2021",
+      }
+    ]
+  },
+  {
+    key: 8,
+    src:
+      "url(" +
+      require("assets/img/01_exhibition/camera/ex_03_right02.jpg").default +
+      ")",
+    difsrc: require("assets/img/01_exhibition/camera/ex_03_right02.jpg").default,
+    altText: "",
+    caption: "",
+    buttons: [
+      {
+        index: 0,
+        top: 1000,
+        left: 1000,
+        title: "Wavy 4",
+        image: require("assets/img/01_exhibition/items/04_Wavy 4_Hee-ang Kim.jpg").default,
+        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+      },
+    ]
+  },
+  
 ];
 
 
