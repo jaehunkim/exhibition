@@ -2,15 +2,17 @@
 import { useState, useEffect } from 'react';
 
 
-function getWindowDimensions() {
+function getWindowDimensions(photowidth, photoheight) {
     const { innerWidth: width, innerHeight: height } = window;
     var wpadding = 0;
     var hpadding = 0;
+    var pwidth = photowidth ? photowidth : 3;
+    var pheight = photoheight ? photoheight : 2;
 
-    if (width / height > 3 / 2) {
-        wpadding = (width - height / 2 * 3) / 2;
+    if (width / height > pwidth / pheight) {
+        wpadding = (width - height / pheight * pwidth) / 2;
     } else {
-        hpadding = (height - width / 3 * 2) / 2;
+        hpadding = (height - width / pwidth * pheight) / 2;
     }
 
     var w = width - 2 * wpadding;
@@ -25,8 +27,8 @@ function getWindowDimensions() {
     };
 }
 
-export default function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+export default function useWindowDimensions(photowidth, photoheight) {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions(photowidth, photoheight));
 
     useEffect(() => {
         function handleResize() {

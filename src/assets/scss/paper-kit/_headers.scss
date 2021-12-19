@@ -409,15 +409,14 @@ video{
     .btn-just-icon{
         position: relative;
         border-radius: $border-radius-btn-large;
-        height: 30px;
-        width: 30px;
-        min-width: 30px;
-        min-height: 30px;
-        padding: 3px;
-    
-        &.btn-sm{
-            padding: 4px !important;
-        }
+        top: -4px;
+        transform: translate(-50%, -50%);
+        height: 15px;
+        width: 15px;
+        min-width: 15px;
+        min-height: 15px;
+        padding: 0px;
+
         i{
             font-size: $font-size-medium;
             padding: 2px 0px;
