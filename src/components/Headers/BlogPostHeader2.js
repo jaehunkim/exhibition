@@ -4,16 +4,16 @@ import React from "react";
 
 // core components
 
-function BlogPostHeader() {
+function BlogPostHeader2() {
 
   return (
     <>
       <div
-        className="page-header-about"
+        className="page-header-about "
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/02_aboutpage/poster.jpg").default +
+            require("assets/img/02_aboutpage/poster2.jpg").default +
             ")",
         }}
       >
@@ -22,4 +22,4 @@ function BlogPostHeader() {
   );
 }
 
-export default BlogPostHeader;
+export default BlogPostHeader2;

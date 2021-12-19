@@ -41,8 +41,6 @@ function BlogPost() {
   }
 
   let junshi_jungbo = [
-    "전시명 : ",
-    "‎",
     "매일의 도약_Leap of everyday",
     "김희앙 개인전 Hee-ang Kim Solo Exhibition",
     "‎",

@@ -7,20 +7,6 @@ import React from "react";
 function BlogPostHeader() {
   let pageHeader = React.createRef();
 
-  React.useEffect(() => {
-    if (window.innerWidth > 991) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
-
   return (
     <>
       <div
@@ -29,7 +15,7 @@ function BlogPostHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/02_aboutpage/darkposter.jpg").default +
+            require("assets/img/02_aboutpage/poster1.jpg").default +
             ")",
         }}
       >

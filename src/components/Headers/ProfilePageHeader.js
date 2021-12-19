@@ -19,7 +19,7 @@ function ProfilePageHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/03_profile/Bloom-and-Wither-1_Hee-ang-Kim_resize.jpeg").default +
+            require("assets/img/02_aboutpage/background01.jpg").default +
             ")",
         }}
       >
