@@ -194,11 +194,13 @@ const items = [
     buttons: [
       {
         index: 0,
-        top: -5000,
-        left: -5000,
-        title: "Wavy 4",
+        top: 539.38,
+        left: 714.5,
+        photowidth:1429,
+        photoheight:1705,
+        title: "",
         image: require("assets/img/01_exhibition/items/04_Wavy 4_Hee-ang Kim.jpg").default,
-        content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+        content: "",
       },
     ]
   },
