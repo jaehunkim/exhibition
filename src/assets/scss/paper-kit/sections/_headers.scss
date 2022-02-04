@@ -214,3 +214,9 @@
 .iframe-container iframe{
     width: 100%;
 }
+
+.control-height {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+}

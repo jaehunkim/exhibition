@@ -2,14 +2,13 @@ import React from "react";
 
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import useWindowDimensions from "components/useWindowDimensions";
 
 // reactstrap components
 import {
   Carousel,
   CarouselItem,
-  CarouselCaption,
   CarouselIndicators,
   Button,
   Modal,

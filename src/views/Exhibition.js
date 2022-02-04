@@ -20,6 +20,7 @@ function Exhibition() {
   });
   return (
     <>
+      <div id="control-height" className="control-height"></div>
       <ColorNavbar />
       <ExhibitionHeader />
     </>
