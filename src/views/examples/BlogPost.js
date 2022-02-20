@@ -2,11 +2,8 @@ import React from "react";
 
 // reactstrap components
 import {
-  Badge,
-  Button,
   Card,
   CardBody,
-  CardTitle,
   Container,
   Row,
   Col,
@@ -33,7 +30,7 @@ function BlogPost() {
       <div>
         <CardBody padding="0">
           <div className="card-information">
-          {props.data}
+            {props.data}
           </div>
         </CardBody>
       </div>
@@ -53,6 +50,8 @@ function BlogPost() {
     "작품 사진 : KC Studio",
     "번역 : 김희앙",
     "번역 검수 : 김지선",
+    "도록 및 포스터 디자인 : 배준민",
+    "사이트 개발 및 디자인 : 김재헌",
     "‎",
     "‎",
     "Leap of Everyday",
@@ -66,6 +65,8 @@ function BlogPost() {
     "Photo : KC Studio",
     "Translation : Hee-ang Kim",
     "Editing and Proofreading : Jiseon Kim",
+    "Catalog and Poster Design : Junmin Bae",
+    "Web Design and Development : Jaehun Kim",
     "‎",
     "‎",
     "Copyright 2021 김희앙. All rights reserved.",

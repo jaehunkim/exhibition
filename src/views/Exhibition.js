@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 // reactstrap components
 // import {
@@ -7,6 +8,16 @@ import React from "react";
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import ExhibitionHeader from "components/Headers/ExhibitionHeader.js";
+import ExhibitionMobile from "views/ExhibitionMobile.js";
+
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+  return isDesktop ? children : null;
+};
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? children : null;
+};
 
 function Exhibition() {
   document.documentElement.classList.remove("nav-open");
@@ -20,8 +31,14 @@ function Exhibition() {
   });
   return (
     <>
-      <ColorNavbar />
-      <ExhibitionHeader />
+      <div id="control-height" className="control-height"></div>
+      <Desktop>
+        <ColorNavbar />
+        <ExhibitionHeader />
+      </Desktop>
+      <Mobile>
+        <ExhibitionMobile />
+      </Mobile>
     </>
   );
 }
