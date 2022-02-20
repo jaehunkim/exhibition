@@ -141,7 +141,7 @@ const ExhibitionItems = [
           index: 0,
           top: 673.23,
           left: 329.39,
-          title: "피고 지다 11 Bloom and Wither 9",
+          title: "피고 지다 9 Bloom and Wither 9",
           image: require("assets/img/01_exhibition/items/05_Bloom and Wither 9_Hee-ang Kim.jpg").default,
           content: "브로치 Brooch⎜10.1x15.2x6.4cm⎜정은에 착색, 석분점토, 레진, 아크릴 페인트 Sterling silver, Stone clay, Resin, Acrylic paint⎜2019",
         },
