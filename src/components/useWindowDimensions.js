@@ -16,7 +16,11 @@ function getWindowDimensions(photowidth, photoheight) {
     var aWidth = width;
     var aHeight = height + barHeight;
 
-    if (aWidth / aHeight > pwidth / pheight) {
+    if (aWidth > photowidth && aHeight > photoheight) {
+        wpadding = (aWidth - photowidth) / 2;
+        hpadding = (aHeight - photoheight) / 2;
+    }
+    else if (aWidth / aHeight > pwidth / pheight) {
         wpadding = (aWidth - aHeight / pheight * pwidth) / 2;
     } else {
         hpadding = (aHeight - aWidth / pwidth * pheight) / 2;
@@ -24,10 +28,6 @@ function getWindowDimensions(photowidth, photoheight) {
 
     var w = aWidth - 2 * wpadding;
     var h = aHeight - 2 * hpadding;
-    //hpadding -= barHeight;
-    console.log('wpadding:{} hpadding{} w:{} h:{}', wpadding, hpadding, w, h);
-    console.log('innerHeight: {} innerWidth: {}', height, width);
-    console.log('actial : {}, element : {}, bar : {}', actualHeight, elementHeight, barHeight);
 
     return {
         wpadding,
