@@ -16,6 +16,7 @@ import {
   Modal,
 } from "reactstrap";
 // core components
+
 const items = ExhibitionItems;
 
 function MoreButton(props) {
