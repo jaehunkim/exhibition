@@ -13,6 +13,27 @@
 .section-gray {
     background-color: #EEEEEE;
 }
+.section-exhibition {
+    background-color: #DCDCDC;
+
+    .btn-just-icon{
+        position: relative;
+        border-radius: $border-radius-btn-large;
+        height: 25px;
+        width: 25px;
+        min-width: 25px;
+        min-height: 25px;
+        padding: 0px;
+        margin: 2px;
+        border-width: 2px;/*상하좌우*/
+        background-color: transparent;
+
+        i{
+            font-size: $font-size-medium;
+            padding: 2px 0px;
+        }
+    }
+}
 .section-nude {
     background-color: $bg-nude;
 }

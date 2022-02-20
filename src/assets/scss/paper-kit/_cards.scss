@@ -107,6 +107,12 @@
                 text-align: center;
             }
         }
+        & .emobile-image {
+
+            .img{
+                border-radius: $border-radius-large;
+            }
+        }
     }
     &.card:not(.card-plain){
         .card-image{
