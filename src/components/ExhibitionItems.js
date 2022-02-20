@@ -3,6 +3,8 @@
 const ExhibitionItems = [
     {
       key: 0,
+      hasButton: true,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_03_right02.jpg").default +
@@ -55,6 +57,8 @@ const ExhibitionItems = [
     },
     {
       key: 1,
+      hasButton: true,      
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_03_right01.jpg").default +
@@ -99,6 +103,8 @@ const ExhibitionItems = [
     },
     {
       key: 2,
+      hasButton: false,
+      hasYoutube: true,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_02_back04.jpg").default +
@@ -109,8 +115,8 @@ const ExhibitionItems = [
       buttons: [
         {
           index: 0,
-          top: -5000,
-          left: -5000,
+          top: 450,
+          left: 715,
           photowidth: 1429,
           photoheight: 1705,
           title: "",
@@ -121,6 +127,8 @@ const ExhibitionItems = [
     },
     {
       key: 3,
+      hasButton: true,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_02_back01.jpg").default +
@@ -181,6 +189,8 @@ const ExhibitionItems = [
     },
     {
       key: 4,
+      hasButton: false,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_02_back03.jpg").default +
@@ -203,6 +213,8 @@ const ExhibitionItems = [
     },
     {
       key: 5,
+      hasButton: false,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_02_back02.jpg").default +
@@ -223,6 +235,8 @@ const ExhibitionItems = [
     },
     {
       key: 6,
+      hasButton: true,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_01_left02.jpg").default +
@@ -251,6 +265,8 @@ const ExhibitionItems = [
     },
     {
       key: 7,
+      hasButton: true,
+      hasYoutube: false,
       src:
         "url(" +
         require("assets/img/01_exhibition/camera/ex_01_left01.jpg").default +

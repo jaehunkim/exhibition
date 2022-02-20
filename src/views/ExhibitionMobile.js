@@ -1,4 +1,5 @@
 import React from "react";
+import YouTube from "react-youtube";
 
 // reactstrap components
 import {
@@ -38,6 +39,13 @@ function DetailedItem(props) {
 }
 
 function EachItem(props) {
+  const opts = {
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
+
   return (
     <div className="article">
       <Row>
@@ -53,10 +61,20 @@ function EachItem(props) {
               </a>
             </div>
             <br />
-
-            {props.info.buttons.map((singleitem) => {
-              return <DetailedItem singleitem={singleitem} />;
-            })}
+            <div>
+              {props.info.hasButton === true
+                ? props.info.buttons.map((singleitem) => {
+                    return <DetailedItem singleitem={singleitem} />;
+                  })
+                : null}
+            </div>
+            <div>
+              {props.info.hasYoutube === true ? (
+                <div class="video-container">
+                  <YouTube videoId="KY7ctnwmhfQ" opts={opts} />
+                </div>
+              ) : null}
+            </div>
           </Card>
         </Col>
       </Row>
