@@ -42,6 +42,10 @@
 	@include social-buttons-color-hover($social-heeang, $social-heeang-hover);
 }
 
+.btn-heeang-dark {
+	@include social-buttons-color-hover($social-heeang-dark, $social-heeang-hover);
+}
+
 .btn-tumblr {
 	@include social-buttons-color($social-tumblr);
 }

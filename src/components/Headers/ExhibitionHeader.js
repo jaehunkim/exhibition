@@ -26,6 +26,7 @@ function MoreButton(props) {
     photowidth,
     photoheight
   );
+  const buttonColor = props.theme.dark ? "heeang-dark" : "heeang";
 
   const Abs = styled.div`
     position: absolute;
@@ -45,7 +46,7 @@ function MoreButton(props) {
         <Abs>
           <Button
             className="page-header-exhibition btn-just-icon btn-border"
-            color="heeang"
+            color={buttonColor}
             href="#pablo"
             size="lg"
             align="center"
