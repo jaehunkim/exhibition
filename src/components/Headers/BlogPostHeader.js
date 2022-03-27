@@ -9,7 +9,7 @@ function BlogPostHeader() {
 
   return (
     <section
-      class="page-header-about"
+      className="page-header-about"
       ref={pageHeader}
       style={{
         backgroundImage:

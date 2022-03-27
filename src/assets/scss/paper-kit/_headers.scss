@@ -181,8 +181,8 @@
 }
 
 .page-header-about-cont{
+    height: 100vh;
     scroll-snap-type: y proximity;
-    scroll-snap-points-y: repeat(100vh);
     overflow: scroll;
 }
 
@@ -194,10 +194,11 @@
     //max-height: 999px;
     overflow: scroll;
     position: relative;
+    width: 100%;
     height: 100vh;
     z-index: 1;
     background-repeat: no-repeat;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
     &.page-header-small{
         min-height: 65vh !important;

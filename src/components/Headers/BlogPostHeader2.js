@@ -7,7 +7,7 @@ import React from "react";
 function BlogPostHeader2() {
   return (
     <section
-      class="page-header-about"
+      className="page-header-about"
       style={{
         backgroundImage:
           "url(" + require("assets/img/02_aboutpage/poster2.jpg").default + ")",

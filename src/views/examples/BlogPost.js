@@ -11,12 +11,8 @@ import FooterWhite from "components/Footers/FooterWhite.js";
 function BlogPost() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
-    document.body.classList.add("blog-post");
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("blog-post");
-    };
   });
 
   function MakeCardBody(props) {
@@ -71,30 +67,31 @@ function BlogPost() {
   return (
     <>
       <ColorNavbar />
-      <div class="page-header-about-cont">
+      <div className="page-header-about-cont row">  
         <BlogPostHeader />
         <BlogPostHeader2 />
-      </div>
-      <div className="wrapper">
-        <div className="main">
-          <div className="section section-white">
-            <Container>
-              <div className="article">
-                <Row>
-                  <Col className="ml-auto mr-auto" md="8">
-                    <Card className="card-blog card-plain text-left">
-                      {junshi_jungbo.map((data) => {
-                        return <MakeCardBody data={data} />;
-                      })}
-                    </Card>
-                  </Col>
-                </Row>
-              </div>
-            </Container>
+        <div className="wrapper">
+          <div className="main">
+            <div className="section section-white">
+              <Container>
+                <div className="article">
+                  <Row>
+                    <Col className="ml-auto mr-auto" md="8">
+                      <Card className="card-blog card-plain text-left">
+                        {junshi_jungbo.map((data) => {
+                          return <MakeCardBody data={data} />;
+                        })}
+                      </Card>
+                    </Col>
+                  </Row>
+                </div>
+              </Container>
+
+              <FooterWhite />
+            </div>
           </div>
         </div>
       </div>
-      <FooterWhite />
     </>
   );
 }
