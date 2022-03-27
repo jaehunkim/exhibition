@@ -77,7 +77,7 @@ function BlogPost() {
                 <div className="article">
                   <Row>
                     <Col className="ml-auto mr-auto" md="8">
-                      <Card className="card-blog card-plain text-left">
+                      <Card className="card-blog card-plain-information text-left">
                         {junshi_jungbo.map((data) => {
                           return <MakeCardBody data={data} />;
                         })}
