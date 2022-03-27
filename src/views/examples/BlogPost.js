@@ -1,17 +1,11 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Card,
-  CardBody,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Card, CardBody, Container, Row, Col } from "reactstrap";
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import BlogPostHeader from "components/Headers/BlogPostHeader.js";
-import BlogPostHeader2 from "components/Headers/BlogPostHeader2.js"
+import BlogPostHeader2 from "components/Headers/BlogPostHeader2.js";
 import FooterWhite from "components/Footers/FooterWhite.js";
 
 function BlogPost() {
@@ -29,12 +23,10 @@ function BlogPost() {
     return (
       <div>
         <CardBody padding="0">
-          <div className="card-information">
-            {props.data}
-          </div>
+          <div className="card-information">{props.data}</div>
         </CardBody>
       </div>
-    )
+    );
   }
 
   let junshi_jungbo = [
@@ -74,15 +66,15 @@ function BlogPost() {
     "‎",
     "후원 Sponsor",
     "서울문화재단, 서울특별시",
-
   ];
-
 
   return (
     <>
       <ColorNavbar />
-      <BlogPostHeader />
-      <BlogPostHeader2 />
+      <div class="page-header-about-cont">
+        <BlogPostHeader />
+        <BlogPostHeader2 />
+      </div>
       <div className="wrapper">
         <div className="main">
           <div className="section section-white">
@@ -92,7 +84,7 @@ function BlogPost() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-left">
                       {junshi_jungbo.map((data) => {
-                        return (<MakeCardBody data={data} />);
+                        return <MakeCardBody data={data} />;
                       })}
                     </Card>
                   </Col>

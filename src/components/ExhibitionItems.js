@@ -242,7 +242,7 @@ const ExhibitionItems = [
           left: 274.97*2,
           title: "M pin 4",
           image: require("assets/img/01_exhibition/items/1000/03_M Pin 3,4.jpeg").default,
-          content: "브로치 Brooch⎜석분점토, 폴리머 클레이, 황동, 아크릴 페인트 Stone clay, Polymer clay, Brass, Acrylic paint⎜2020",
+          content: "(Left)브로치 Brooch⎜석분점토, 폴리머 클레이, 황동, 아크릴 페인트 Stone clay, Polymer clay, Brass, Acrylic paint⎜2020",
         },
         {
           index: 2,
@@ -274,7 +274,7 @@ const ExhibitionItems = [
           left: 628.06*2,
           title: "M pin 3",
           image: require("assets/img/01_exhibition/items/1000/03_M Pin 3,4.jpeg").default,
-          content: "브로치 Brooch⎜석분점토, 폴리머 클레이, 황동, 아크릴 페인트 Stone clay, Polymer clay, Brass, Acrylic paint⎜2020",
+          content: "(Right)브로치 Brooch⎜석분점토, 폴리머 클레이, 황동, 아크릴 페인트 Stone clay, Polymer clay, Brass, Acrylic paint⎜2020",
         },
         {
           index: 5,
