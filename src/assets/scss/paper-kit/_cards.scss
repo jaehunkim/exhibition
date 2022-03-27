@@ -87,6 +87,7 @@
     }
 
     &.card-plain-information{
+        scroll-snap-align: center;
         background-color: transparent;
         box-shadow: none;
         border-radius: 0;

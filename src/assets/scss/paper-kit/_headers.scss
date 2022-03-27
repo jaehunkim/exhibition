@@ -182,7 +182,7 @@
 
 .page-header-about-cont{
     height: 100vh;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow: scroll;
 }
 

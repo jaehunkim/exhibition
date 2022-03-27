@@ -26,6 +26,11 @@ function BlogPost() {
   }
 
   let junshi_jungbo = [
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
     "매일의 도약_Leap of everyday",
     "김희앙 개인전 Hee-ang Kim Solo Exhibition",
     "‎",
@@ -40,6 +45,23 @@ function BlogPost() {
     "번역 검수 : 김지선",
     "도록 및 포스터 디자인 : 배준민",
     "사이트 개발 및 디자인 : 김재헌",
+    "‎",
+    "후원 Sponsor",
+    "서울문화재단, 서울특별시",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+  ];
+
+  let junshi_jungbo2 = [
+    "‎",
+    "‎",
+    "‎",
+    "‎",
+    "‎",
     "‎",
     "‎",
     "Leap of Everyday",
@@ -60,14 +82,15 @@ function BlogPost() {
     "Copyright 2021 김희앙. All rights reserved.",
     "‎",
     "‎",
-    "후원 Sponsor",
-    "서울문화재단, 서울특별시",
+    "‎",
+    "‎",
+    "‎",
   ];
 
   return (
     <>
       <ColorNavbar />
-      <div className="page-header-about-cont row">  
+      <div className="page-header-about-cont row">
         <BlogPostHeader />
         <BlogPostHeader2 />
         <div className="wrapper">
@@ -79,6 +102,15 @@ function BlogPost() {
                     <Col className="ml-auto mr-auto" md="8">
                       <Card className="card-blog card-plain-information text-left">
                         {junshi_jungbo.map((data) => {
+                          return <MakeCardBody data={data} />;
+                        })}
+                      </Card>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="ml-auto mr-auto" md="8">
+                      <Card className="card-blog card-plain-information text-left">
+                        {junshi_jungbo2.map((data) => {
                           return <MakeCardBody data={data} />;
                         })}
                       </Card>
