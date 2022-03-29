@@ -19,7 +19,7 @@ function ProfilePageHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/02_aboutpage/background01.jpg").default +
+            require("assets/img/02_aboutpage/web/background01.jpg").default +
             ")",
         }}
       >

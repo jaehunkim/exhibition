@@ -13,7 +13,7 @@ function BlogPostHeader() {
       ref={pageHeader}
       style={{
         backgroundImage:
-          "url(" + require("assets/img/02_aboutpage/poster1.jpg").default + ")",
+          "url(" + require("assets/img/02_aboutpage/web/poster01.jpg").default + ")",
       }}
     />
   );

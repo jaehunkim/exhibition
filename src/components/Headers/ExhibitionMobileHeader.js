@@ -19,7 +19,7 @@ function ExhibitionMobileHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/02_aboutpage/background02.jpg").default +
+            require("assets/img/02_aboutpage/web/background02.jpg").default +
             ")",
         }}
       >

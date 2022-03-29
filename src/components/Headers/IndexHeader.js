@@ -12,7 +12,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_explore/ex_view.jpg").default +
+      require("assets/img/00_explore/0329/ex_view.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -20,7 +20,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_explore/ex_view_2.jpg").default +
+      require("assets/img/00_explore/0329/ex_view_2.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -28,7 +28,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_explore/ex_view_3.jpg").default +
+      require("assets/img/00_explore/0329/ex_view_3.jpg").default +
       ")",
     altText: "",
     caption: "",
@@ -36,7 +36,7 @@ const items = [
   {
     src:
       "url(" +
-      require("assets/img/00_explore/ex_view_4.jpg").default +
+      require("assets/img/00_explore/0329/ex_view_4.jpg").default +
       ")",
     altText: "",
     caption: "",

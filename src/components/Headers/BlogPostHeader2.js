@@ -10,7 +10,7 @@ function BlogPostHeader2() {
       className="page-header-about"
       style={{
         backgroundImage:
-          "url(" + require("assets/img/02_aboutpage/poster2.jpg").default + ")",
+          "url(" + require("assets/img/02_aboutpage/web/poster02.jpg").default + ")",
       }}
     />
   );
