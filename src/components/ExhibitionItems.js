@@ -7,9 +7,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_03_right02.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_03_right02.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_03_right02.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_03_right02.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -61,9 +61,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_03_right01.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_03_right01.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_03_right01.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_03_right01.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -107,9 +107,9 @@ const ExhibitionItems = [
       hasYoutube: true,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_02_back04.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_02_back04.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_02_back04.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_02_back04.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -131,9 +131,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_02_back01.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_02_back01.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_02_back01.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_02_back01.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -193,9 +193,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_02_back03.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_02_back03.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_02_back03.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_02_back03.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -217,9 +217,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_02_back02.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_02_back02.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_02_back02.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_02_back02.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -305,9 +305,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_01_left02.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_01_left02.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_01_left02.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_01_left02.jpg").default,
       altText: "",
       caption: "",
       buttons: [
@@ -335,9 +335,9 @@ const ExhibitionItems = [
       hasYoutube: false,
       src:
         "url(" +
-        require("assets/img/01_exhibition/camera/ex_01_left01.jpg").default +
+        require("assets/img/01_exhibition/camera/web/ex_01_left01.jpg").default +
         ")",
-      difsrc: require("assets/img/01_exhibition/camera/ex_01_left01.jpg").default,
+      difsrc: require("assets/img/01_exhibition/camera/web/ex_01_left01.jpg").default,
       altText: "",
       caption: "",
       buttons: [
