@@ -189,7 +189,7 @@ const ExhibitionItems = [
     },
     {
       key: 4,
-      hasButton: false,
+      hasButton: true,
       hasYoutube: false,
       src:
         "url(" +
@@ -203,11 +203,11 @@ const ExhibitionItems = [
           index: 0,
           photowidth: 1429,
           photoheight: 2000,
-          top: -5000,
-          left: -5000,
+          top: 1352.64,
+          left: 713.25,
           title: "Wavy 4",
-          image: require("assets/img/01_exhibition/items/1000/04_Wavy 4_Hee-ang Kim.jpg").default,
-          content: "귀걸이 Earrings⎜5.7x8.3x3, 4.8x8.7x3cm⎜폴리머 클레이, 레진, 황동, 정은, 금도금 Polymer clay, Resin, Brass, Sterling silver, Gold plated⎜2021",
+          image: require("assets/img/01_exhibition/items/1000/04_Wavy-4_2-Hee-ang-Kim.jpg").default,
+          content: "Wavy 4⎜거울⎜거울, 나무, 점토 Mirror, Wood, Clay⎜2021",
         },
       ]
     },

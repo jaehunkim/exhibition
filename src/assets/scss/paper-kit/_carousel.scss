@@ -62,11 +62,13 @@
 }
 
 .carousel-indicators > li{
+    height: 10px;
     background-color: rgba(204, 204, 204, 0.49);
     border: 0 none;
 }
 .carousel-indicators .active{
-    background-color: #7295cb;
+    //background-color: #7295cb;
+    background-color: $social-heeang-dark;
 }
 .page-carousel:hover{
     .carousel-control.right,
